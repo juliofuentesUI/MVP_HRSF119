@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-# REACT_WEBPACK_TEMPLATE
-StarterCode_For_MINIAPPS
-=======
 # MVP_HRSF119
-Movie_OST_Finder
->>>>>>> a420c1edba21635871f35ac61dbb10901a73878c
+Movie_OST_Finde
