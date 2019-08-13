@@ -26,6 +26,7 @@ class Login extends React.Component {
     axios.get(`/login/${this.state.username}/${this.state.password}`)
     .then((response) => {
         console.log(response);
+        //FIRES REDUX ACTION OBJECT
         authenticate();
     }).catch((error) => {
         console.log(error);
