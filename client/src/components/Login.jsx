@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Login extends React.Component {
   constructor(props) {
@@ -20,8 +21,15 @@ class Login extends React.Component {
 
   submitHandler() {
     const { authenticate } = this.props;
-    authenticate();
     //Perform GET REQUEST TAKING onChanged USERNAME and PASSWORD
+    //Params property in config is same as doing /login?username=julio&password=fasdf
+    axios.get(`/login/${this.state.username}/${this.state.password}`)
+    .then((response) => {
+        console.log(response);
+        authenticate();
+    }).catch((error) => {
+        console.log(error);
+    });
   }
 
   render() {
